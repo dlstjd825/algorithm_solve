@@ -1,0 +1,42 @@
+# 빌드 파일 및 디렉터리
+*.exe
+*.dll
+*.lib
+*.obj
+*.pdb
+*.ilk
+*.idb
+
+# 빌드 출력 디렉터리
+Debug/
+Release/
+x64/
+x86/
+build/
+out/
+
+# Visual Studio 임시 파일
+.vs/
+*.vcxproj.user
+*.vcxproj.filters
+*.suo
+*.user
+*.opendb
+*.tlog
+*.log
+*.lastbuildstate
+
+# Visual Studio 캐시 및 설정 파일
+*.VC.db
+*.VC.opendb
+.vscode/
+
+# Windows 시스템 파일
+Thumbs.db
+desktop.ini
+
+# 임시 파일
+*.tmp
+*.bak
+*.swp
+*~
