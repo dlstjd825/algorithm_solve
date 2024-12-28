@@ -16,7 +16,6 @@ build/
 out/
 
 # Visual Studio 임시 파일
-.vs/
 *.vcxproj.user
 *.vcxproj.filters
 *.suo
