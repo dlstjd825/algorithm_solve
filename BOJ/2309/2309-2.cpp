@@ -19,33 +19,24 @@ int main() {
 		}
 	}
 
-	for (int a = 0; a < 9; a++) {
-		for (int b = a + 1; b < 9; b++) {
-			for (int c = b + 1; c < 9; c++) {
-				for (int d = c + 1; d < 9; d++) {
-					for (int e = d + 1; e < 9; e++) {
-						for (int f = e + 1; f < 9; f++) {
-							for (int g = f + 1; g < 9; g++) {
-								if (height[a] + height[b] + height[c] + height[d] + height[e] + height[f] + height[g] == 100) {
-									cout << height[a] << endl;
-									cout << height[b] << endl;
-									cout << height[c] << endl;
-									cout << height[d] << endl;
-									cout << height[e] << endl;
-									cout << height[f] << endl;
-									cout << height[g] << endl;
-									return 0;
-								}
-							}
+	int sum = 0;
 
-						}
+	for (int i = 0; i < 9; i++) {
+		sum += height[i];
+	}
+
+	int diff = sum - 100;
+
+	for (int i = 0; i < 9; i++) {
+		for (int j = 0; j < 9; j++) {
+			if (height[i] + height[j] == diff) {
+				for (int k = 0; k < 9; k++) {
+					if (k != i && k != j) {
+						cout << height[k] << endl;
 					}
 				}
+				return 0;
 			}
 		}
 	}
 }
-
-
-
-
