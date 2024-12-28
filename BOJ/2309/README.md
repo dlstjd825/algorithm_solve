@@ -1,7 +1,7 @@
 # [BOJ] 2309. 일곱 난쟁이
-| 티어 | 유형 | 링크 |
-| :-: | :-: | :-: |
-|브론즈1|`수학` `정렬`|[BOJ 2309](https://www.acmicpc.net/problem/2309)|
+| 티어 | 유형 | 푼 언어 | 링크 |
+| :-: | :-: | :-: | :-: |
+|브론즈1|`수학` `정렬`|c++|[BOJ 2309](https://www.acmicpc.net/problem/2309)|
 
 ![alt text](image.png)
 
