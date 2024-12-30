@@ -80,3 +80,6 @@ for (int i = 6; i < 10001; i += 3) {
 	dp[i] = (dp[i] % M + temp % M) % M;
 }
 ```
+
+## 참고
+[[BOJ] (G2) 11333. 4 x n 타일링](https://tolerblanc.github.io/boj/boj-11333/)
