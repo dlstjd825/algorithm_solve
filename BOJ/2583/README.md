@@ -31,26 +31,26 @@
 queue<tuple<int, int>> q;   // 튜플을 저장하는 큐 선언
 
 void bfs(int x, int y) {
-	board[y][x] = 1;
-	area[cnt] = 1;
-	q.push(make_tuple(y, x));  // 좌표를 튜플로 저장하고 큐에 넣기
+    board[y][x] = 1;
+    area[cnt] = 1;
+    q.push(make_tuple(y, x));  // 좌표를 튜플로 저장하고 큐에 넣기
 
-	while (!q.empty()) {
-		int cy = get<0>(q.front());  // 큐의 첫 번째 원소(튜플)의 첫 번째 값 반환
-		int cx = get<1>(q.front());  // 큐의 첫 번째 원소(튜플)의 두 번째 값 반환
+    while (!q.empty()) {
+        int cy = get<0>(q.front());  // 큐의 첫 번째 원소(튜플)의 첫 번째 값 반환
+        int cx = get<1>(q.front());  // 큐의 첫 번째 원소(튜플)의 두 번째 값 반환
 
-		q.pop();
+        q.pop();
 
-		for (int i = 0; i < 4; i++) {
-			int nx = cx + dx[i];
-			int ny = cy + dy[i];
+        for (int i = 0; i < 4; i++) {
+            int nx = cx + dx[i];
+            int ny = cy + dy[i];
 
-			if ((0 <= nx && nx < n) && (0 <= ny && ny < m) && board[ny][nx] != 1) {
-				board[ny][nx] = 1;
-				area[cnt]++;
-				q.push(make_tuple(ny, nx));  // 새로운 좌표를 튜플로 만들어서 넣기
-			}
-		}
-	}
+            if ((0 <= nx && nx < n) && (0 <= ny && ny < m) && board[ny][nx] != 1) {
+                board[ny][nx] = 1;
+                area[cnt]++;
+                q.push(make_tuple(ny, nx));  // 새로운 좌표를 튜플로 만들어서 넣기
+            }
+        }
+    }
 }
 ```
