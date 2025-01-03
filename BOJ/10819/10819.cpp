@@ -15,7 +15,7 @@ int main() {
 	for (int i = 0; i < n; i++) {
 		cin >> ary[i];
 	}
-
+	 
 	sort(ary, ary + n);
 
 	int rst = 0;
