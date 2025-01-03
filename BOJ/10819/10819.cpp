@@ -29,4 +29,4 @@ int main() {
     } while (next_permutation(ary, ary + n));
 
     cout << rst;
-}
+}  
