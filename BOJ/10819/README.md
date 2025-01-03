@@ -32,6 +32,7 @@ do {
 ## 접근 2.
 **접근 1.** 은 너무 날먹같아서 다른 방법도 알아보았다. 뭔가 재귀함수로 풀 수 있을 것 같아서 찾아보았다.     
 코드를 먼저 보는 것이 좋을 것 같다.   
+[전체코드보기](10819-2.cpp)   
 ```cpp
 void dfs(int depth) {
     if (depth == N) {
@@ -57,5 +58,4 @@ void dfs(int depth) {
 `dfs(depth + 1)`을 호출하여 `current`의 다음 원소를 찾는다.   
 탐색이 끝나면 백트래킹으로 상태를 복원한다.   
 자세한 동작 과정은 다음 그림을 보자.   
-![alt text](image-1.png)   
-[전체코드보기](10819-2.cpp) 
+<img src="image-1.png" alt="description" width="400">
