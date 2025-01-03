@@ -21,7 +21,7 @@ int main() {
 	int rst = 0;
 
 	do {
-		int sum = 0;
+		int sum = 0; 
 		for (int i = 0; i < n - 1; i++) {
 			sum += abs(ary[i] - ary[i + 1]);
 		}
